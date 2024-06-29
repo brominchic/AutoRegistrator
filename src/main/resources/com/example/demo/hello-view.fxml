@@ -17,6 +17,8 @@
    <CheckBox fx:id="mode" mnemonicParsing="false" text="выбрать тихий режим?" />
    <TextField fx:id="number" promptText="Номер без цифры 7" />
    <TextField fx:id="mail" promptText="почта" />
+    <TextField fx:id="link" promptText="ссылка на товар"/>
     <Button fx:id="enterSms" mnemonicParsing="false" text="Отправить код из  смс" onAction="#onButtonClick" visible="false"/>
     <TextField fx:id="sms" promptText="5 цифр из смс" visible="false"/>
+
 </VBox>

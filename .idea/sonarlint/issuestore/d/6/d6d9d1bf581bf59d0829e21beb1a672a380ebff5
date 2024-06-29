@@ -1,20 +1,20 @@
 
 p
-java:S5411("(Use a primitive boolean expression here.(ó™ÀØøÿÿÿÿ8˜‚®¤†2J$45f88629-2525-4d20-a141-1c0efc7699d4
-ˆ	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(õ°¹Î8›‚®¤†2J$eff335f6-65c4-4846-a452-5a305376c5a3
+java:S5411*"(Use a primitive boolean expression here.(ó™ÀØøÿÿÿÿ8˜‚®¤†2J$29104ccf-3d2b-4c5b-885a-337a9a0e8dd0
+	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(»ˆ¿‡üÿÿÿÿ8³—ª§†2J$c7b2645e-f270-4684-9492-c7e20b51a35a
 Ô
-java:S1192¸"Define a constant instead of duplicating this literal "//*[@id=\"page-header\"]/div[1]/div[1]/div/div/div/div/div[5]/div/a/div[1]/svg" 4 times.(–’ş8‚®¤†2J$8dd30dab-4a3f-4f11-b6f0-456ea3ce614d
+java:S1192º"Define a constant instead of duplicating this literal "//*[@id=\"page-header\"]/div[1]/div[1]/div/div/div/div/div[5]/div/a/div[1]/svg" 4 times.(–’ş8‚®¤†2J$aff95565-23dd-459e-9510-593c49b27caa
 Œ
-java:S1192%"IDefine a constant instead of duplicating this literal "user.dir" 4 times.(“®‰«8‚®¤†2J$f5a6d360-4558-43b2-a3fa-5a14e64ee139
+java:S1192'"IDefine a constant instead of duplicating this literal "user.dir" 4 times.(“®‰«8‚®¤†2J$34225f13-aa42-4728-8a2c-8e5460430f40
 ½
-java:S1192³"tDefine a constant instead of duplicating this literal "//*[@id=\"app\"]/main/div/div/div[2]/div/button/div" 4 times.(©Œ¥Àùÿÿÿÿ8‚®¤†2J$420438a4-0023-4488-b92a-e7886ff513bf
+java:S1192µ"tDefine a constant instead of duplicating this literal "//*[@id=\"app\"]/main/div/div/div[2]/div/button/div" 4 times.(©Œ¥Àùÿÿÿÿ8‚®¤†2J$40fae791-cd92-4ddd-ba52-685093cdd77a
 Ã
-java:S1192˜"Define a constant instead of duplicating this literal "//*[@id=\"app\"]/main/div/div/div/div/div/div[1]/div[5]/button" 4 times.(à´¿Ò8‚®¤†2J$8926fd14-09d6-49ee-b48e-4e4d843b8e46
+java:S1192š"Define a constant instead of duplicating this literal "//*[@id=\"app\"]/main/div/div/div/div/div/div[1]/div[5]/button" 4 times.(à´¿Ò8‚®¤†2J$6cdb5711-08c2-4f12-b10e-5551d105c482
 Ë
-java:S1192¨"†Define a constant instead of duplicating this literal "//*[@id=\"app\"]/main/div/div/div/div/div/div[2]/div[5]/div[2]/button" 8 times.(…ı‡8‚®¤†2J$2b518cba-7684-4c90-ab72-0dd46682211e
+java:S1192ª"†Define a constant instead of duplicating this literal "//*[@id=\"app\"]/main/div/div/div/div/div/div[2]/div[5]/div[2]/button" 8 times.(…ı‡8‚®¤†2J$e0039434-58e0-4c40-85bb-2ff1214555e8
 ë
-java:S1192¢"¡Define a constant instead of duplicating this literal "//*[@id=\"app\"]/main/div/div/div/div/div/div[2]/div[2]/div/div/div/div[1]/div[1]/div/label/span" 4 times.(Â¯ëíùÿÿÿÿ8‚®¤†2J$99a5bbab-2908-4c86-b1e6-46018a3a49cf
+java:S1192¤"¡Define a constant instead of duplicating this literal "//*[@id=\"app\"]/main/div/div/div/div/div/div[2]/div[2]/div/div/div/div[1]/div[1]/div/label/span" 4 times.(Â¯ëíùÿÿÿÿ8‚®¤†2J$c404d4b4-db5b-47e4-9a75-99efd2cda564
 ‚
-java:S1118":Add a private constructor to hide the implicit public one.(¶Åºòşÿÿÿÿ8 ‚®¤†2J$ecb5bd8c-b672-4334-891e-c9fce2c9e49c
+java:S1118":Add a private constructor to hide the implicit public one.(¶Åºòşÿÿÿÿ8 ‚®¤†2J$748de020-44b6-4305-befd-038e9f7d4437
 š
-java:S3776w"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(èìµıÿÿÿÿ8´‚®¤†2J$12294b74-4119-4f76-aae3-1272e02bf5bb
+java:S3776y"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(èìµıÿÿÿÿ8´‚®¤†2J$125f5b45-6673-4062-b4fa-167723ace07f

@@ -28,10 +28,12 @@ public class AutoAccountMaker {
     static Random random;
     static String mail;
     static WebDriver driver;
+    static String link;
     protected static final Logger log = LoggerFactory.getLogger(AutoAccountMaker.class);
 
-    public static void main(String number,String mailFromApp, Boolean mode) throws Exception {
+    public static void main(String number,String mailFromApp, Boolean mode,String linkFromApp) throws Exception {
         random = new Random();
+        link = linkFromApp;
         mail=mailFromApp;
         fillLists();
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
@@ -54,12 +56,12 @@ public class AutoAccountMaker {
         button.click();
         Thread.sleep(2000);
         var ctr = (driver.getPageSource());
-        StringBuilder link = new StringBuilder();
+        StringBuilder linkRef = new StringBuilder();
         for (int i = 35; i < ctr.indexOf("personalization=false&amp;display=page") - ctr.indexOf("data-personalization=\"false\" href=\"") + 48; i++) {
-            link.append(ctr.charAt(ctr.indexOf("data-personalization=\"false\" href=\"") + i));
+            linkRef.append(ctr.charAt(ctr.indexOf("data-personalization=\"false\" href=\"") + i));
         }
-        link = new StringBuilder(link.toString().replace("amp;", ""));
-        driver.get(link.toString());
+        linkRef = new StringBuilder(linkRef.toString().replace("amp;", ""));
+        driver.get(linkRef.toString());
         Thread.sleep(5000);
         button = driver.findElement(By.xpath("//*[@id=\"desktopContainer\"]/div[1]/div/form/div/input"));
         button.click();
@@ -119,7 +121,7 @@ public class AutoAccountMaker {
     public static void heat() throws InterruptedException {
         Thread.sleep(3000);
         WebElement button;
-        driver.get("https://megamarket.ru/catalog/details/nabor-nozhey-gipfel-japanese-6629-100022762197/");
+        driver.get(link);
         Thread.sleep(20000);
         if (isElementPresent(driver, "/html/body/div/button")) {
             button = driver.findElement(By.xpath("/html/body/div/button"));
