@@ -1,0 +1,15 @@
+
+Ÿ
+java:S1450"WRemove the "isActive" field and declare it as a local variable in the relevant methods.(ÃÄƒ‚úÿÿÿÿ8”›¯¢†2J$1c562f4e-b042-4fb3-88f7-4bdf5a006abb
+y
+java:S2696"6Make the enclosing method "static" or remove this set.(˜‹Ú¦8ƒ²®¢†2J$69b007fe-9e3f-4032-894e-079f203fa9be
+R
+java:S1128"0Remove this unused import 'javafx.geometry.Pos'.(ÌÆ÷Ùøÿÿÿÿ8¶ªÏ¦†2
+Y
+java:S1128"7Remove this unused import 'javafx.scene.control.Label'.(ö²­žÿÿÿÿÿ8¶ªÏ¦†2
+V
+java:S1128"4Remove this unused import 'java.io.DataInputStream'.(”•úºÿÿÿÿÿ8¶ªÏ¦†2
+Q
+java:S1128"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8¶ªÏ¦†2
+t
+java:S1068",Remove this unused "isActive" private field.(ÃÄƒ‚úÿÿÿÿ8°›¯¢†2J$e8a9d588-6ca6-46ba-bfe5-23c3258ec4a5

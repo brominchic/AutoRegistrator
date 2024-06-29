@@ -1,0 +1,69 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="demo3">
+    <output-path>$PROJECT_DIR$/out/artifacts/demo3</output-path>
+    <root id="root">
+      <element id="archive" name="demo.jar">
+        <element id="module-output" name="demo" />
+      </element>
+      <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.4.7" />
+      <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.4.7" />
+      <element id="library" level="project" name="Maven: com.google.auto.service:auto-service-annotations:1.1.1" />
+      <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.2" />
+      <element id="library" level="project" name="Maven: com.google.errorprone:error_prone_annotations:2.26.1" />
+      <element id="library" level="project" name="Maven: com.google.guava:failureaccess:1.0.2" />
+      <element id="library" level="project" name="Maven: com.google.guava:guava:33.2.1-jre" />
+      <element id="library" level="project" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" />
+      <element id="library" level="project" name="Maven: com.google.j2objc:j2objc-annotations:3.0.0" />
+      <element id="library" level="project" name="Maven: dev.failsafe:failsafe:3.3.2" />
+      <element id="library" level="project" name="Maven: io.opentelemetry.semconv:opentelemetry-semconv:1.25.0-alpha" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-api-incubator:1.39.0-alpha" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-api:1.39.0" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-context:1.39.0" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-sdk-common:1.39.0" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:1.39.0" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:1.39.0" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-sdk-logs:1.39.0" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-sdk-metrics:1.39.0" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-sdk-trace:1.39.0" />
+      <element id="library" level="project" name="Maven: io.opentelemetry:opentelemetry-sdk:1.39.0" />
+      <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.14.17" />
+      <element id="library" level="project" name="Maven: org.apache.commons:commons-exec:1.4.0" />
+      <element id="library" level="project" name="Maven: org.apiguardian:apiguardian-api:1.1.2" />
+      <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.42.0" />
+      <element id="library" level="project" name="Maven: org.controlsfx:controlsfx:11.1.2" />
+      <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-api:5.9.2" />
+      <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.10.0" />
+      <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-commons:1.9.2" />
+      <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-engine:1.10.0" />
+      <element id="library" level="project" name="Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.2.0" />
+      <element id="library" level="project" name="Maven: org.passay:passay:1.6.4" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-api:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-chromium-driver:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-devtools-v85:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-devtools-v124:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-devtools-v125:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-devtools-v126:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-http:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-ie-driver:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-json:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-manager:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-os:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-remote-driver:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:4.22.0" />
+      <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-support:4.22.0" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.4" />
+    </root>
+  </artifact>
+</component>
