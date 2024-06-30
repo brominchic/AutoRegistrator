@@ -23,3 +23,13 @@ j
 :src/main/java/com/example/demo/SecondSceneApplication.java,4\3\43268d31692be1a515c1da4fa32a6a37f7a5d4b1
 \
 ,src/main/java/com/example/demo/Launcher.java,d\b\db791dd9dd7753788ef8e8dd57ed3bb02d869b01
+c
+3src/main/java/com/example/demo/MainApplication.java,5\5\559e1e86070ac75f60ca6523ce0cfbaefc05cd7e
+^
+.src/main/java/com/example/demo/Controller.java,9\8\988da4df79fb21390a991cf5b649ae9ab52f6858
+Å
+Q.idea/sonarlint/securityhotspotstore/9/8/988da4df79fb21390a991cf5b649ae9ab52f6858,b\6\b6bcaed0efa5a3998f0257be9dd059e98d406850
+Å
+Q.idea/sonarlint/securityhotspotstore/5/5/559e1e86070ac75f60ca6523ce0cfbaefc05cd7e,3\e\3e655dd2b4c35318cbc34c009a0291530f4ad41d
+w
+G.idea/sonarlint/issuestore/5/5/559e1e86070ac75f60ca6523ce0cfbaefc05cd7e,2\7\276f6d41008498f209098e8330346b8619aec9e5

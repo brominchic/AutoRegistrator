@@ -12,8 +12,9 @@ import org.passay.PasswordGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -31,7 +32,7 @@ public class AutoAccountMaker {
     static String link;
     protected static final Logger log = LoggerFactory.getLogger(AutoAccountMaker.class);
 
-    public static void main(String number,String mailFromApp, Boolean mode,String linkFromApp) throws Exception {
+    public static void start(String number, String mailFromApp, Boolean mode, String linkFromApp) throws Exception {
         random = new Random();
         link = linkFromApp;
         mail=mailFromApp;
@@ -39,6 +40,8 @@ public class AutoAccountMaker {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--user-data-dir=" + System.getProperty("user.home") + "\\AppData\\Local\\Google\\Chrome\\User Data");
+        options.addArguments("--profile-directory=Profile 1");
         if (mode) {
             options.addArguments("headless");
         }
@@ -55,10 +58,10 @@ public class AutoAccountMaker {
         button = driver.findElement(By.xpath("//*[@id=\"page-header\"]/div[2]/nav/div/div[1]/div[2]/div[1]/div/button"));
         button.click();
         Thread.sleep(2000);
-        var ctr = (driver.getPageSource());
+        var pageSource = (driver.getPageSource());
         StringBuilder linkRef = new StringBuilder();
-        for (int i = 35; i < ctr.indexOf("personalization=false&amp;display=page") - ctr.indexOf("data-personalization=\"false\" href=\"") + 48; i++) {
-            linkRef.append(ctr.charAt(ctr.indexOf("data-personalization=\"false\" href=\"") + i));
+        for (int i = 35; i < pageSource.indexOf("personalization=false&amp;display=page") - pageSource.indexOf("data-personalization=\"false\" href=\"") + 48; i++) {
+            linkRef.append(pageSource.charAt(pageSource.indexOf("data-personalization=\"false\" href=\"") + i));
         }
         linkRef = new StringBuilder(linkRef.toString().replace("amp;", ""));
         driver.get(linkRef.toString());
@@ -128,21 +131,14 @@ public class AutoAccountMaker {
             button.click();
         }
         Thread.sleep(5000);
-
         button = driver.findElement(By.xpath("//*[@id=\"app\"]/main/div/div[1]/div[10]/div[2]/button"));
         button.click();
-
         Thread.sleep(5000);
-
         button = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div/div/div/div[1]/div/div/div[2]/a[1]/span"));
         button.click();
-
-        //*[@id="app"]/main/div/div/div/div/div/div[2]/div/div[2]/div/div[2]/div[2]/button
         Thread.sleep(5000);
-
         button = driver.findElement(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/div[2]/div/div[2]/div/div[2]/div[2]/button"));
         button.click();
-
         Thread.sleep(5000);
         if (isElementPresent(driver, "//*[@id=\"app\"]/main/div/div/div/div/div/div[1]/div[2]/div/div/div/div/div[1]/div[1]/form/div/input")) {
             button = driver.findElement(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/div[1]/div[2]/div/div/div/div/div[1]/div[1]/form/div/input"));
@@ -228,7 +224,7 @@ public class AutoAccountMaker {
 
     public static void downloadCookie(String mail) throws IOException {
         String userHome = System.getProperty("user.home");
-        Path fileToMovePath = Paths.get(userHome + "\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Network\\Cookies");
+        Path fileToMovePath = Paths.get(userHome + "\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1\\Network\\Cookies");
         File directory = new File(userHome + "\\Desktop", "kuki");
         if (!directory.exists() && directory.mkdir()) {
             log.info("Создана папка на рабочем столе");
