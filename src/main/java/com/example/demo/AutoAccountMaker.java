@@ -40,7 +40,6 @@ public class AutoAccountMaker {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--user-data-dir=" + System.getProperty("user.home") + "\\AppData\\Local\\Google\\Chrome\\User Data");
         options.addArguments("--profile-directory=Profile 1");
         if (mode) {
             options.addArguments("headless");
@@ -48,8 +47,11 @@ public class AutoAccountMaker {
         driver = new ChromeDriver(options);
         driver.get("https://megamarket.ru/");
         Thread.sleep(5000);
-        var button = driver.findElement(By.xpath("//*[@id=\"cookies-notification\"]/button[1]/div"));
-        button.click();
+        WebElement button;
+        if (isElementPresent(driver, "//*[@id=\"cookies-notification\"]/button[1]/div")) {
+            button = driver.findElement(By.xpath("//*[@id=\"cookies-notification\"]/button[1]/div"));
+            button.click();
+            }
         Thread.sleep(5000);
         button = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div/div/div/div/div/div/div[3]/button[1]"));
         button.click();
@@ -229,7 +231,7 @@ public class AutoAccountMaker {
         if (!directory.exists() && directory.mkdir()) {
             log.info("Создана папка на рабочем столе");
         }
-        Path targetPath = Paths.get(userHome + "\\Desktop\\kuki\\" + mail);
+        Path targetPath = Paths.get(userHome + "\\Desktop\\kuki\\" + mail.substring(0,mail.length()-5)+".json");
         Files.move(fileToMovePath, targetPath);
     }
 
